@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>Timer!</title>
+		<link rel="stylesheet" href="style.css"
+>
+		<script src="timer.js"></script>
+	</head>
+
+	<body>
+			<h1>TIMER!</h1>
+			<input id="box"type="text"></input>	
+			<a href="#" id="start">Start</a>
+			<a href="#" id="stop">Stop</a>
+			<a href="#" id="reset">Reset</a>
+
+			<script>
+				function onBodyLoad(){
+					Timer.init({"start":"start","stop":"stop","reset":"reset"});
+				}
+				window.addEventListener("load",onBodyLoad);
+			</script>
+	
+	</body>
+
+</html>
